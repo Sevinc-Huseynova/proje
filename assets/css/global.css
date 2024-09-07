@@ -1,0 +1,106 @@
+  
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+ 
+ :root {
+         --header-yuxari-reng: #0a121f;
+         --header-asagi-reng: #0b121f;
+         --header-btn-rengi: #3A68B8;
+        }
+        *{
+          text-align: none;
+        }
+
+        
+    
+        body {
+               font-family: Arial, Helvetica, sans-serif;
+         }
+
+    
+         .open-sans-nazik   {
+             font-family: "Open Sans", sans-serif;
+             font-optical-sizing: auto;
+             font-weight: 100;
+             font-style: normal;
+             font-variation-settings:
+               "wdth" 100;
+        }
+
+    
+        
+        
+        
+        
+        header{
+                  background: linear-gradient(to bottom,var(--header-yuxari-reng),var(--header-asagi-reng));
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  padding: 30px 0;
+        
+       
+                }
+      
+        header nav {
+          display: none;
+
+        }
+        header nav a {
+          margin-right:30px;
+          background: hwb(120 7% 93%);
+
+        }
+        header i {
+                    color: #fff;
+                    font-size: 24px;
+         }
+         header button {
+                background-color: var(--header-btn-rengi);
+                color: #fff;
+                padding: 15px 30px;
+                border-color:transparent;
+                border-radius: 5px;
+                display: none;
+
+         }
+          a  {
+
+               color: #fff;
+
+             }
+
+
+               
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+ @media (min-width:768px)  {
+     
+       header i {
+                   display: none !important;
+        }
+        
+        header nav, header button {   
+          display: flex;
+        }
+        header nav  a {
+
+          margin-right: 20px;
+        }
+          header img{
+                 width: 150px;
+          }
+      }
+
+       header button {
+        display: flex;
+       }
