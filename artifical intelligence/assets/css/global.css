@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --header-yuxari-reng:#060611;
+  --header-asagi-reng:#110d0f;
+  --header-btn-rengi :#3a68b8;
+  --hero-yuxari-reng:#110d0f;
+  --hero-asagi-reng:#060611;
+}
+  body  {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+     *  {
+    margin: 0;
+    text-decoration: none !important;
+     }
+  .open-sans-nazik {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+/* ********robot olan yer yuxari************************* */
+   header {
+  background:var(--header-yuxari-reng);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px ;
+}
+   header nav    { 
+   display: none;
+}
+  header nav a  {
+    margin-right: 30px;
+}
+/* telefonda gorsenen icon */
+  header i {
+    color: #a42525;
+    font-size: 30px;
+  }
+  /* sign in butonu */
+  header button {
+    background-color: #3a68b8;
+    color: #fff;
+    padding: 15px 30px;
+    border-color:transparent ;
+    border-radius:5px;
+     display: none;  
+  }
+  a {
+     color: #fff;
+    }
+/* -------------------------------------------------- */
+ 
+         /* introduction start */
+         .introduction  {
+          background:var(--header-yuxari-reng);
+        }
+        .next-generation-text{
+          color:#3a68b8;
+          padding: 20px;
+          text-transform: uppercase;
+          margin: 50px 20px;
+        }
+        .introduction h2 {
+          color: #fff;
+          font-size: 55px;
+          margin: 20px 0 40px;
+          font-weight: 700
+        }
+        .introduction p{
+          margin-bottom: 50px;
+          color: #ded4d4;
+          opacity: 0.7;
+        }
+
+        .introduction button {
+          border-radius: 8px;
+
+        }
+             /* introduction end */
+/* ---------------------------------------------------------------------- */
+   /* mobil menu */
+   /* javascript vasitesi ile+child selektor */
+   /* ********x- acib baglayan********************** */
+.mobile-menyu.mobil-menyunu-acan {
+  width: 100%;
+}
+
+
+.mobile-menyu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0 ,0.8);
+  width: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: width 1.2s ease ;
+}
+.fa-circle-xmark {
+  color: #ffff;
+  position:absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 29px;
+  color:#ccc;
+}
+.mobile-nav-links {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 100%;
+}
+.mobile-nav-links a {
+  color:#ccc;
+  font-size: 20px;
+}
+.mobile-nav-links a:hover, .fa-circle-xmark:hover {
+  color: #ffff;
+}
+/* ******modal qutu************************ */
+
+.arxasi-solgun-reng.aktiv{
+  width: 100%;
+
+}
+.arxasi-solgun-reng {
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+ 
+  width: 0;
+
+}
+
+.modal-boxes  {
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  border-radius: 4px;
+  box-shadow:10px 10px 30px rgba(243, 240, 240, .6);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  
+}
+.modal-boxes.aktiv{
+display: block;
+}
+.modal-boxes .fa-xmark {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  font-size: 20px;
+  z-index: 9999; 
+}
+/* ******************************************** */
+/* awards  start */
+ .awardsSwiper .swiper-slide img {
+  width: 73px;
+  height: 79px;
+  margin: 20px auto;
+  display:block; 
+
+}
+   .swiper-slide .card {
+    background-color:#0f1624;
+    color:#fff;
+   
+   }
+        
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+      background-color: #2C3647;
+
+    }
+        
+.playicon{
+  width: 12px;
+  margin-right: 10px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  
+}
+.buttons button {
+  width: 140px;
+  height: 60px;
+  background-color: #3a68b8;
+  color:#fff;
+  padding: 10px;
+  border-color: transparent;
+  
+}
+.buttons button :nth-child(2){
+  display: flex;
+  align-items: center;
+}
+/* -----------------------COMPANY SECTION */
+.companies {
+padding: 50px;
+}
+/* ---------------------------------------------------------------------- */
+
+.tel-section {
+  background:linear-gradient(to bottom, var(--hero-yuxari-reng), var(--hero-asagi-reng));
+  color: #ebe9ee;
+  padding: 49px 0;
+
+} 
+
+.tel .tel-left h6 {
+text-transform: uppercase;
+padding: 50px ;
+margin: 50px 20px;
+}    
+.tel .tel-left h2  {
+font-size: 50px;
+padding: 80px 20px;
+font-weight: 700;
+}
+.tel .tel-left p {
+margin-bottom: 50px;
+color: #ded4d4;
+opacity: 0.7;
+padding: 10px 20px;
+}  
+.tel  button {
+background-color: var(--header-btn-rengi);
+border: none;
+padding: 20px 20px;
+margin: 10px 50px;
+color: #ded4d4;
+border-radius: 8px;
+
+}
+   /* -----------futerin yuxarisi AWESOME-------------------------------------------- */
+   
+  .awesome .awesome-left h2  {
+    color: #fff;
+  font-size: 40px;
+  margin: 20px 0 40px;
+  font-weight: 700;
+  }
+  .awesome .awesome-left p {
+  color: #fff;
+  opacity: 0.5;
+  }  
+.awesome-section {
+  background:linear-gradient(to bottom, var(--hero-yuxari-reng), var(--hero-asagi-reng));
+  color: #fff;
+  padding: 50px 0;
+}
+/* ------------FOOTER ------------------ */
+
+  .footer-center a  {
+    display: block;
+   } 
+
+   .footer {
+    color: #fff;
+   background: #020b18;
+   }
+
+   .footer a{
+    color:#fff;
+    display: block;
+    text-decoration: none;
+    font-size: 40px 0;
+   }
+   
+  .footer-center a {
+    display: block;
+    color: #5e5d5d;
+    text-decoration: none;
+    font-size: 40px 0;
+  }
+  .footer h5 {
+    color: #fff;
+  }
+  .footer p {
+    color: #5f6062;
+}
+  .footer-right a {
+color: #fff;
+
+}
+/* ----------------------------------------------- */
+
+    /* MOBILE FIRST */
+ /* planset ve uzeri yuxari ekranlarda */
+       
+@media(min-width:768px)  {
+          header i {
+       display: none !important;
+    }
+        header nav, header button {
+      display: flex;
+    }
+        header nav a   {
+      margin-right: 20px;
+    }
+    .header nav {
+      display: flex;
+      gap: 20px;
+    }
+    .introduction .intro-left-side {
+      padding: 160px;
+   }
+   .intro-left-side h2 {
+    font-size: 3.6rem;
+   }}
+@media(min-width: 992px)   {
+  .hero-left h2 {
+    font-size: 48px !important;}
+   }
+
+    
